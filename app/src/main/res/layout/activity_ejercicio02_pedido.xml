@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/clEjercicio02Pedido"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio02_Pedido">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:contentPaddingLeft="16dp"
+        app:contentPaddingRight="16dp"
+        app:contentPaddingTop="50dp"
+        app:contentPaddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNombreCliente"
+                android:layout_marginTop="16dp"
+                android:text="Nombre Cliente: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvNumeroCliente"
+                android:layout_marginTop="16dp"
+                android:text="Número Cliente: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProductos"
+                android:layout_marginTop="16dp"
+                android:text="Productos: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvCiudad"
+                android:layout_marginTop="16dp"
+                android:text="Ciudad: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDireccion"
+                android:layout_marginTop="16dp"
+                android:text="Dirección: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <ImageButton
+            android:id="@+id/imbDial"
+            android:src="@drawable/ic_call"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/imbWsp"
+            android:src="@drawable/ic_wsap"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/imbMaps"
+            android:src="@drawable/ic_maps"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
